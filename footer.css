@@ -1,0 +1,46 @@
+footer{
+    color: gray;
+    background-color: black;
+}
+
+#f-top{
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0;
+}
+
+#f-top dt{
+    color: gainsboro;
+}
+
+#f-top dd{
+    font-size: small;
+    font-weight: lighter;
+}
+
+#f-middle{
+    border-top: 0.3px solid rgba(220, 220, 220, 0.212);
+    border-bottom: 0.3px solid rgba(220, 220, 220, 0.212);
+    font-size: smaller;
+    padding: 1rem 0;
+}
+
+#f-middle-first :first-child{
+    color: gainsboro;
+}
+
+#f-end{
+    display: flex;
+    justify-content: center;
+    font-size: smaller;
+    padding: 1rem;
+}
+
+#f-end img{
+    width: 1rem;
+    height: auto;
+}
+
+#f-end a{
+    color: gainsboro;
+}

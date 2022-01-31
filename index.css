@@ -121,6 +121,10 @@ nav img{
     overflow: hidden;
 }
 
+#trending-part{
+    margin-bottom: 6rem;
+}
+
 #trending-part img{
     position: relative;
     width: 100%;
@@ -167,8 +171,67 @@ nav img{
     font-weight: bolder;
 }
 
-footer{
-    background-color:black;
-    height: 30vh;
+.orange-zone img{
     width: 100%;
+    height: auto;
 }
+
+.orange-zone div{
+    margin-bottom: 20rem;
+}
+
+#o-picture-one{
+    position: relative;
+}
+
+#title-one{
+    position: absolute;
+    bottom: -16rem;
+    left: 5rem;
+    color: white;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+#o-picture-two{
+    position: relative;
+}
+
+#title-two{
+    position: absolute;
+    color: white;
+    bottom: -16rem;
+    left: 5rem;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+#o-picture-three{
+    position: relative;
+}
+
+#title-three{
+    position: absolute;
+    color: white;
+    font-weight: bolder;
+    font-size: 2rem;
+    bottom: -16rem;
+    left: 5rem;
+}
+
+@media screen and (max-width:1059px) {
+    #logo-bar{
+        display: none;
+    }
+
+    #nav-menu{
+        display: none;
+    }
+    .nav-search-bar{
+        display: none;
+    }
+    #nav-icons a:first-child{
+        display: none;
+    }
+}   
+
