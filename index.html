@@ -9,10 +9,12 @@
      <!-- 부가적인 테마 -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
      <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <script src="https://kit.fontawesome.com/dce981d912.js" crossorigin="anonymous"></script>
      <link rel="stylesheet" href="index.css">
      <link rel="stylesheet" href="footer.css">
      <link rel="stylesheet" href="after.css">
+     <link rel="stylesheet" href="nav.css">
      <title>나이키</title>
     </head>
     <body>
@@ -46,7 +48,7 @@
                     <li><a href="">Kids</a></li>
                     <li><a href="">Sale</a></li>
                 </ul>
-                <div class="col-xs-4" id="nav-last-item">
+                <div class="col-lg-4 col-sm-8 col-xs-8"id="nav-last-item">
                     <div class="nav-search-bar">
                         <button class="round">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
@@ -71,8 +73,12 @@
                                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                             </svg>
                         </a>
+                        <a id="hidden-icon" href=""><i class="fas fa-bars"></i></a>
                     </div>
                 </div>
+            </div>
+            <div id="hidden-nav-bar">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti architecto ducimus minus, laborum neque accusamus quis quaerat reprehenderit unde accusantium dolore nisi placeat! Voluptas necessitatibus rem quaerat nihil aperiam. Pariatur odit incidunt itaque distinctio nemo laboriosam veritatis, nam eum, magnam alias officia architecto expedita tempora, odio laudantium a vero? Amet?
             </div>
         </nav>
     </div>
@@ -190,7 +196,7 @@
         </div>
         <div id="trending-part" class="container-fluid"> 
             <div class="row-xs-8"><h3>Trending Now</h3></div>
-            <div class="col-xs-6">
+            <div class="col-sm-6 col-xs-12">
                 <img src="https://static-breeze.nike.co.kr/kr/ko_kr//cmsstatic/structured-content/65250/211208_hp_p7_bg1.jpg" alt="">
                 <div class="sub">
                     <span>조던 X 파리 생제르맹</span>
@@ -199,7 +205,7 @@
                     </div>
                 </div>
             </div>
-            <div id="waffle" class="col-xs-6">
+            <div id="waffle" class="col-sm-6 col-xs-12">
                 <img src="https://static-breeze.nike.co.kr/kr/ko_kr//cmsstatic/structured-content/65250/220111_hp_p9_bg2.jpg" alt="">                
                 <div class="sub-right">
                     <span>와플 트레이너 2</span>
@@ -208,30 +214,187 @@
                     </div>
                 </div>
             </div>
-        </div>  
-            <label for="orange-zone">
-                <h3>Apparel Essentials</h3>
-            </label>
-            <div class="orange-zone">
-                <div id="o-picture-one" class="col-xs-4">
-                    <a href="">
-                        <img src="https://static-breeze.nike.co.kr/kr/ko_kr//cmsstatic/structured-content/65250/210902_hp_p8_bg1.jpg" alt="">
-                    </a>
-                    <div id="title-one">재킷 & 베스트</div>
+        </div>
+        <div id="nike-slide" class="container-fluid">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+              
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <div class="row-xs-4">
+                      <div class="col-sm-6 col-md-4">
+                        <a class="thumbnail">
+                          <img class="swiperImg" src="https://static-breeze.nike.co.kr/kr/ko_kr//cmsstatic/structured-content/65250/220105_hp_p7_bg1.jpg" alt="">
+                          <div class="caption">
+                            <h3>나이키 데이브레이크</h3>
+                            <p>
+                              여성신발 <br>
+                              119,000원
+                            </p>
+          
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="row-xs-4">
+                      <div class="col-sm-6 col-md-4">
+                        <a class="thumbnail">
+                          <img class="swiperImg" src="https://static-breeze.nike.co.kr/kr/ko_kr//cmsstatic/structured-content/65250/220105_hp_p7_bg2.jpg" alt="">
+                          <div class="caption">
+                            <h3>나이키 라하르 로우</h3>
+                            <p>여성신발<br>
+                              169,000원
+                            </p>
+                            
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="row-xs-4">
+                      <div class="col-sm-6 col-md-4">
+                        <a class="thumbnail">
+                          <img class="swiperImg" src="https://static-breeze.nike.co.kr/kr/ko_kr//cmsstatic/structured-content/65250/220105_hp_p7_bg3.jpg" alt="">
+                          <div class="caption">
+                            <h3>나이키 와플 트레이너2 SD</h3>
+                            <p>남성신발<br>
+                              119,000원
+                            </p>
+                            
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="row-xs-4">
+                      <div class="col-sm-6 col-md-4">
+                        <a class="thumbnail">
+                          <img class="swiperImg" src="https://static-breeze.nike.co.kr/kr/ko_kr//cmsstatic/structured-content/65250/220105_hp_p7_bg4.jpg" alt="">
+                          <div class="caption">
+                            <h3>나이키 줌 플라이4</h3>
+                            <p>남성 로드 러닝화<br>
+                              189,000원
+                            </p>
+                            
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="row-xs-4">
+                      <div class="col-sm-6 col-md-4">
+                        <a class="thumbnail">
+                          <img class="swiperImg" src="https://static-breeze.nike.co.kr/kr/ko_kr//cmsstatic/structured-content/65250/220105_hp_p7_bg5.jpg" alt="">
+                          <div class="caption">
+                            <h3>나이키 디파이 올 데이</h3>
+                            <p>남성 트레이닝화 <br>
+                              79,000원
+                            </p>
+                            
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="row-xs-4">
+                      <div class="col-sm-6 col-md-4">
+                        <a class="thumbnail">
+                          <img class="swiperImg" src="https://static-breeze.nike.co.kr/kr/ko_kr//cmsstatic/structured-content/65250/220105_hp_p7_bg6.jpg" alt="">
+                          <div class="caption">
+                            <h3>카이리 인피니티 EP</h3>
+                            <p>성인공용 농구화<br>
+                              159,000원
+                            </p>
+                            
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="row-xs-4">
+                      <div class="col-sm-6 col-md-4">
+                        <a class="thumbnail">
+                          <img class="swiperImg" src="https://static-breeze.nike.co.kr/kr/ko_kr//cmsstatic/structured-content/65250/220105_hp_p7_bg7.jpg" alt="">
+                          <div class="caption">
+                            <h3>나이키 에어 줌 빅토리 투어 2 보아</h3>
+                            <p>성인공용 골프화(와이드)<br>
+                              69,000원
+                            </p>
+                            
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="row-xs-4">
+                      <div class="col-sm-6 col-md-4">
+                        <a class="thumbnail">
+                          <img class="swiperImg" src="https://static-breeze.nike.co.kr/kr/ko_kr//cmsstatic/structured-content/65250/220105_hp_p7_bg8.jpg" alt="">
+                          <div class="caption">
+                            <h3>에어 조던 1 레트로 하이 OG</h3>
+                            <p>남성신발 <br>
+                              199,000원
+                            </p>
+                            
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="row-xs-4">
+                      <div class="col-sm-6 col-md-4">
+                        <a class="thumbnail">
+                          <img class="swiperImg" src="https://static-breeze.nike.co.kr/kr/ko_kr//cmsstatic/structured-content/65250/220105_hp_p7_bg9.jpg" alt="">
+                          <div class="caption">
+                            <h3>나이키 베이퍼 14 엘리트 FG</h3>
+                            <p>성인공용 축구화<br>
+                              299,000원
+                            </p>
+                           
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div id="o-picture-two" class="col-xs-4">
-                    <a href="">
-                        <img src="https://static-breeze.nike.co.kr/kr/ko_kr//cmsstatic/structured-content/65250/210902_hp_p8_bg2.jpg" alt="">
-                    </a>
-                    <div id="title-two">후디 & 크루</div>
-                </div>
-                <div id="o-picture-three" class="col-xs-4">
-                    <a href="">
-                        <img src="https://static-breeze.nike.co.kr/kr/ko_kr//cmsstatic/structured-content/65250/210902_hp_p8_bg3.jpg" alt="">
-                    </a>
-                    <div id="title-three">팬츠 & 타이즈</div>
-                </div>
+              
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
+        <label for="orange-zone">
+            <h3>Apparel Essentials</h3>
+        </label>
+        <div class="orange-zone">
+            <div id="o-picture-one" class="col-sm-4 col-xs-12">
+                <a href="">
+                    <img src="https://static-breeze.nike.co.kr/kr/ko_kr//cmsstatic/structured-content/65250/210902_hp_p8_bg1.jpg" alt="">
+                </a>
+                <div id="title-one">재킷 & 베스트</div>
             </div>
+            <div id="o-picture-two" class="col-sm-4 col-xs-12">
+                <a href="">
+                    <img src="https://static-breeze.nike.co.kr/kr/ko_kr//cmsstatic/structured-content/65250/210902_hp_p8_bg2.jpg" alt="">
+                </a>
+                <div id="title-two">후디 & 크루</div>
+            </div>
+            <div id="o-picture-three" class="col-sm-4 col-xs-12">
+                <a href="">
+                    <img src="https://static-breeze.nike.co.kr/kr/ko_kr//cmsstatic/structured-content/65250/210902_hp_p8_bg3.jpg" alt="">
+                </a>
+                <div id="title-three">팬츠 & 타이즈</div>
+            </div>
+        </div>
     </div>
     <footer class="container-fluid">
         <div id="f-top" class="row">
