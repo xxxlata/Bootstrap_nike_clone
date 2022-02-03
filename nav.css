@@ -1,21 +1,81 @@
-#hidden-nav-bar{
-    display: none;
-    z-index: 1000;
-    width: 100%;
-    position: absolute;
-}
 nav{
     padding: 1rem 0;
     position: relative;
 }
 
+.New:hover #New-nav-bar{
+    display: block;
+}
+.Men:hover #Men-nav-bar{
+    display: block;
+}
+.Women:hover #Women-nav-bar{
+    display: block;
+}
+.Kids:hover #Kids-nav-bar{
+    display: block;
+}
+.Sale:hover #Sale-nav-bar{
+    display: block;
+}
+
+#New-nav-bar{
+    display: none;
+    z-index: 1000;
+    top: 2.9rem;
+    width: 295%;
+    right: -97%;
+    position: absolute;
+    background-color: white;
+    padding: 1rem;
+}
+
+#Sale-nav-bar{
+    display: none;
+    z-index: 1000;
+    top: 2.9rem;
+    width: 295%;
+    right: -97%;
+    position: absolute;
+    background-color: white;
+    padding: 1rem;
+}
+
+#Women-nav-bar{
+    display: none;
+    z-index: 1000;
+    top: 2.9rem;
+    width: 295%;
+    right: -97%;
+    position: absolute;
+    background-color: white;
+    padding: 1rem;
+}
+#Kids-nav-bar{
+    display: none;
+    z-index: 1000;
+    top: 2.9rem;
+    width: 295%;
+    right: -97%;
+    position: absolute;
+    background-color: white;
+    padding: 1rem;
+}
+#Sale-nav-bar{
+    display: none;
+    z-index: 1000;
+    top: 2.9rem;
+    width: 295%;
+    right: -97%;
+    position: absolute;
+    background-color: white;
+    padding: 1rem;
+}
+
+
 #nav-menu{
     display: flex;
     justify-content: center;
-}
-
-#nav-menu:hover #hidden-nav-bar{
-    display: block;
 }
 
 #nav-menu li{
@@ -61,3 +121,23 @@ nav img{
 #nav-icons a{
     margin: 5px;
 }
+
+@media screen and (max-width:1059px) {
+
+    #nav-menu{
+        display: none;
+    }
+    .nav-search-bar{
+        display: none;
+    }
+    #nav-icons a:first-child{
+        display: none;
+    }
+    #nav-icons{
+        text-align: right;
+    }
+    #hidden-icon{
+        display: block;
+    }
+    
+}  
