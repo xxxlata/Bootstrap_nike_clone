@@ -44,3 +44,44 @@ footer{
 #f-end a{
     color: gainsboro;
 }
+
+#f-title span{
+    display: none;
+}
+
+#f-about span{
+    display: none;
+}
+
+@media screen and (max-width:773px) {
+    #social{
+        display: none;
+    }
+
+    #f-about dt{
+        display: none;
+    }
+    #f-about dd{
+        display: none;
+    }
+
+    #f-about span{
+        display: block;
+        color: white;
+        font-weight: bolder;
+    }
+
+    #f-shop dd{
+        display: none;
+    }
+
+    #f-title dt{
+        display: none;
+    }
+    #f-title span{
+        display: block;
+        color: white;
+        font-weight: bolder;
+    }
+    
+}
